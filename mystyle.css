@@ -41,7 +41,8 @@ h1{
     padding: 30px;
     gap: 30px;
     background-color: #efefce;
-    border: 3px solid #473834;
+    border-top: 3px solid #473834;
+    border-bottom: 3px solid #473834;
 }
 
 .left-side{
