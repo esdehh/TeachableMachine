@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Style</title>
+
+   <link rel="stylesheet" href="mystyle.css"> 
+
+</head>
+<body>
+   <div class="header"> 
+    <h1>FIND YOUR STYLE!</h1>
+    <p class="subtitle">upload your image and discover your fashion style ✨</p>
+   </div>
+
+    <!-- 이미지 업로드를 위한 파일 입력 필드 -->
+    <div class="main-container">
+      <div class="left-side">
+        <label for="imageInput" class="upload-button">
+            upload image
+        </label>
+        <input type="file" id="imageInput" accept="image/*">
+
+        <div id="preview">
+         <p class="placeholder-text"> your image will appear here </p>
+        </div>
+      </div>
+
+      <div class="right-side" id="result">
+        <div id="result-container"></div>
+      </div>
+    </div>
+
+    <!-- TensorFlow.js 및 Teachable Machine 라이브러리 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+    <!-- 모델 및 예측 관련 스크립트 -->
+    <script type="text/javascript" src="myjs.js"></script>
+      
+
+</body>
+</html>

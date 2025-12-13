@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    margin: 0;
+    padding-top: 20px ;
+    padding-bottom: 20px ;
+}
+
+.header {
+    background-color: #efefce;
+    padding: 20px 40px;
+    border-bottom: 3px solid #3d3d3d;
+    border-top: 3px solid #3d3d3d;
+    margin-bottom: 20px;
+}
+
+h1{
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    color: #473834;
+    letter-spacing: 5px;
+}
+
+.subtitle {
+    text-align: left;
+    font-size: 16px;
+    font-style: italic;
+    color: #e29faa;
+}
+
+.main-container {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    background-color: #efefce;
+    border: 3px solid #473834;
+}
+
+.left-side{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.upload-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: white;
+    color: #473834;
+    border: 2px solid #473834;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    width: fit-content;
+}
+
+.upload-button:hover{
+    background-color: #e29faa;
+    color: white;
+    border-color: #473834;
+}
+
+#imageInput {
+    display: none;
+}
+
+#preview{
+    background-color: #d4d4d4;
+    border: 2px solid #473834;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 390px;
+    width: 500px;
+}
+
+#uploadedImage {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.placeholder-text{
+    color: #888;
+    font-size: 14px;
+}
+
+.right-side{
+    flex: 1;
+}
+
+#result-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.style-card {
+    background-color: white;
+    border: 2px solid #473834;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.style-info {
+    flex: 1;
+}
+
+.style-name {
+    font-size: 26px;
+    font-weight: bold;
+    color: #473834;
+    margin-bottom: 8px;
+    letter-spacing: 3px;
+}
+
+.rank-badge {
+    font-size: 20px;
+    color: #473834;
+    margin-right: 12px;
+}
+
+.confidence {
+    font-size: 18px;
+    color: #e29faa;
+    font-style: italic;
+}
+
+.style-images {
+    display: flex;
+    gap: 12px;
+}
+
+.style-example {
+    width: 90px;
+    height: 110px;
+    border: 2px solid #473834;
+    object-fit: cover;
+    background-color: white;
+}
+
