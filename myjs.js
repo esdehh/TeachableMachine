@@ -120,7 +120,10 @@ async function predict(imageElement) {
         card.innerHTML = 
      '<div class="style-info">' +
         '<div class="style-name">' + 
-            '<span class="rank-badge">#' + (i+1) + '</span>' + styleName.toUpperCase() +
+            '<span class="rank-badge">#' + (i+1) + '</span>' + 
+            '<a href="https://www.google.com/search?tbm=isch&q=' + styleName + ' outfits" target="_blank" class="style-link">' + 
+            styleName.toUpperCase() +
+            '</a>' +
           '</div>' +
         '<div class="confidence">' + percentage + '% match</div>' + 
           '<div class="progress-bar">' +
